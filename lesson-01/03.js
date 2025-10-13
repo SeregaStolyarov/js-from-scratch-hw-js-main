@@ -5,14 +5,15 @@
 */
 
 // your code
-
 let sum = 0;
 let min = 1;
 const max = 20;
 
 while (min <= max) {
+    if(min % 2 === 0 ){
     sum = sum + min;
-    min = min + 2
+    }
+    min = min + 1
 }
 
 console.log(sum);
