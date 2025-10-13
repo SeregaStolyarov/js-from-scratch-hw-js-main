@@ -16,4 +16,3 @@ while (min <= max) {
 }
 
 console.log(sum);
-alert(sum)

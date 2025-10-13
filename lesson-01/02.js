@@ -6,14 +6,14 @@
 */
 
 // your code
-let factorial
-let x = 1;
-let n = 10;
+let factorial  = 1;
+let min = 1;
+const max = 10;
 
-while (n) {
-   x *= (n --)
-    
+while (min <= max) {
+    factorial = factorial * min;
+    min = min + 1
+
 }
 
-console.log(x);
-alert(x)
+console.log(factorial);
