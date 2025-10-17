@@ -5,5 +5,22 @@
  */
 
 const score = 70 // тестовое значение, можно изменять
-let grade
+let grade =  true
+
+
+const F = 0 <= 49
+const D = 50 <= 69
+const C = 70 <= 79
+const B = 80 <= 89
+const A = 90 <= 100
+
+
+while (score) {
+if(F && D && C && B && A) 
+    console.log(grade);
+    
+}
+
+
+
 // your code

@@ -7,11 +7,26 @@
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
 
-let dice1 // your code
-let dice2 // your code
-let isWinningDouble // your code
+let dice1 = Math.floor(Math.random() * 6)
+let dice2 = Math.floor(Math.random() * 6)
+let isWinningDouble = true
 
-/*
+const number1 = randomNum
+const number2 = number1 + 1
+const number3 = number2 + 1
+const number4 = number3 + 1
+const number5 = number4 + 1
+const number6 = number5 + 1
+let double = true
+let notMatches = false
+
+
+while (notMatches) {
+  notMatches = +prompt('Бросай камень,нажми "Ок"')
+  if (dice1 === number3 && dice2 === number3 || dice1 === number4 && dice2 === number4 || dice1 === number5 && dice2 === number5 || dice1 === number6 && dice2 === number6)
+  
+
+    
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
 if (isWinningDouble) {
@@ -19,4 +34,4 @@ if (isWinningDouble) {
 } else {
   console.log('Не выигрышный дубль.')
 }
-*/
+}

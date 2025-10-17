@@ -17,3 +17,8 @@ while (min <= max) {
 }
 
 console.log(sum);
+
+
+
+
+
