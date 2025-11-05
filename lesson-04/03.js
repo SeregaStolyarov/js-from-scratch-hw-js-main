@@ -17,4 +17,18 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-function findCommonElements() {}
+function findCommonElements(arr1, arr2) {
+set1 = set(arr1)
+set2 = set(arr2)
+common_elements = list(set1.intersection(set2))
+return common_elements
+
+
+array1 = [1, 2, 3, 4, 5]
+array2 = [4, 5, 6, 7, 8]
+common = findCommonElements(array1, array2)
+print(common)
+
+}
+
+
