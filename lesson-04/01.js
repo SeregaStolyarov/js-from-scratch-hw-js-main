@@ -21,3 +21,31 @@ for (let i = 0; i < array.length; i++) {
 }
 return false;
 }
+
+
+
+
+
+
+
+
+
+
+
+// let people = ['Alex' ,'Bob', 'tom', 'som']
+// console.log(people[0]);
+// let number = 3
+// console.log(people[number]);
+// console.log(people[0]);
+// console.log(people[1]);
+// console.log(people[2]);
+// console.log(people[3]);
+// for (let i = 0; i < people.length; i++){
+    // console.log(i);
+    // console.log(people[i]);
+    
+    
+// }
+
+
+// console.log(includesElement(people,'ben'));
