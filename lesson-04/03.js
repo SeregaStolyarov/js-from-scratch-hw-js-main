@@ -20,17 +20,20 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 function findCommonElements(arr1, arr2) {
     set1 = set(arr1)
     set2 = set(arr2)
-
-    const array = [];
-
-    for (let i = 0; i < arr1.length; i += 1) {
-        for (let j = 0; j < arr2.length; j += 1) {
-            if (arr1[i].includes(arr2[j])) {
-                return array.push(i);
-            }
-        }
-    }
+  // Используем метод filter() для первого массива
+const commonElements = arr1.filter(element => {
+    // Для каждого элемента из arr1 проверяем, есть ли он в arr2
+    return arr2.includes(element);
+});
+return commonElements;
 }
+
+// Пример использования:
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7, 8];
+const common = findCommonElements(array1, array2);
+console.log(common); // Вывод: [4, 5]
+
 
 
 
