@@ -14,4 +14,11 @@
 
 function doubleEachCharacter(input_string) {
     
-}
+        let newStr = "";
+        for (let i = 0; i < input_string.length; i++) {
+            newStr += input_string[i] + input_string[i];
+        }
+        return newStr;
+    }
+
+console.log(doubleEachCharacter("hello"));
