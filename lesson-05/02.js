@@ -33,13 +33,12 @@ const gallery = {
   'Mona Lisa': 'Leonardo da Vinci',
   'Starry Night': 'Vincent van Gogh',
   'The Scream': 'Edvard Munch',
+  
 }
 
 function updateGallery(gallery, artName, newValue) {
-  if (artName in gallery){
-    gallery[artName] = newValue;
-        console.log(`Информация о произведении "${artName}" обновлена.`);
-  }
-  return gallery;
+  gallery[artName] = newValue;
+  
 }
-console.log(gallery)
+
+
