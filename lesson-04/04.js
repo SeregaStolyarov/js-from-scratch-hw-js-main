@@ -21,4 +21,4 @@ function doubleEachCharacter(input_string) {
         return newStr;
     }
 
-console.log(doubleEachCharacter("hello"));
+console.log(doubleEachCharacter("hellooooo"));

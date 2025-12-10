@@ -26,3 +26,14 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 
 const map = () => {}
 
+const numbers = [1, 2, 3, 4, 5];
+
+// Callback-функция, которая умножает каждый элемент на 2
+const doubleCallback = (element) => {
+  return element * 2;
+};
+
+// Используем нашу функцию map
+const doubledNumbers = map(numbers, doubleCallback);
+
+console.log(doubledNumbers);

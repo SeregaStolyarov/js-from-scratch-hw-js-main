@@ -19,9 +19,74 @@ const game = {
     if (this.resources.hasOwnProperty(resourceName)) {
       this.resources[resourceName] += amount;
     } else {
-      console.log('Invalid resource');
+      
     }
   }
 };
+
+console.log('Invalid resource');
+
+
+
+
+
+
+
+
+
+
+
+// const num = [2, 3, 4, 5, 6, 7 ]
+// const cars = [ 'audi', 'bmw', 'volvo']
+// const cars2 = [{model:'Mers', year: 2000}, 
+//   {model:' WV', year: 2001}, 
+//   {model: 'jaguar', year: 2002}]
+
+  // for (let i = 0; i < cars2.length; i++){
+  //   console.log(cars2[i].model);
+  // }
+
+  // for (let i = 0; i < num.length; i++) {
+  //   console.log(num[i]);
+    
+    
+  // }
+  
+  
+
+// for (let i = 0; i < num.length; i++) {
+//   const element = num[i] * 3; 
+// console.log(element);
+// }
+  
+// for(let i = 0; i < num.length; i++ ){
+//   if(num[i] > 3 ){
+//     console.log(num[i]);
+//   }
+// }
+  
+// for(let i = 0; i < cars.length; i++ ){
+//   if (cars[i].length <= 4 ){
+//     console.log(cars[i]);
+//   }
+// }
+
+// for(let i = 0; i < cars.length; i++ ){
+//     console.log(`i have ${cars[i]}`);
+//   }
+
+
+
+//   for (let i = 0; i < num.length; i++) { 
+// console.log(i);
+//   }
+
+//   for(let i = 0; i < cars.length; i++ ){
+//     console.log( cars[i].length);
+//   }
+
+
+
+
 
 

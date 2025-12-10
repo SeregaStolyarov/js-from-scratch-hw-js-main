@@ -22,12 +22,20 @@ const oddNumbers = filter(numbers, (element, index) => {
 
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
-const numbers = [1, 2, 3, 4, 5]
-const filter = filter(numbers,(element,index) => {
-  return `${index}: ${element}`;
-  
-});
 
-console.log(filter);
+const filter = (array,callback) => {
+  const araay2 = []
+  for (let i = 0; i < array.length; i++) {
+    const result = callback(array[i],i) 
+      if(result === true ){
+        araay2.push(array[i])
+      }
+  }
+  return  araay2
+}
+
+
+
+
 
 
