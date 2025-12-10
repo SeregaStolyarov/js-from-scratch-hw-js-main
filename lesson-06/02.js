@@ -27,9 +27,8 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 const map = (array, callback) => {
 const araay2 = []
 for (let i = 0; i < array.length; i++) {
-    const result = callback(array[i],i) 
-    araay2.push(array[i])   
+    araay2.push(callback(array[i],i))  
 }
-return result * 2
+return araay2 * 2
 }
 
