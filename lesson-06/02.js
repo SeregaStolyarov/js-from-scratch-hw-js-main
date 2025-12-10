@@ -28,7 +28,8 @@ const map = (array, callback) => {
 const araay2 = []
 for (let i = 0; i < array.length; i++) {
     const result = callback(array[i],i) 
-    araay2.push(array[i])
-    return result
+    araay2.push(array[i])   
 }
+return result * 2
 }
+

@@ -44,7 +44,7 @@ console.log(gallery)
 
 
 
-const array = [ 1, 2, 3, 4, -5, -6,]
+// const array = [ 1, 2, 3, 4, -5, -6,]
 
 // // for (let i = 0; i < array.length; i++) {
 // //   let number = Math.abs(array[i])
@@ -52,7 +52,7 @@ const array = [ 1, 2, 3, 4, -5, -6,]
   
 // }
 
-array.forEach((el,i) => { console.log(el,)})
+// array.forEach((el,i) => { console.log(el,)})
 
 
 
@@ -74,7 +74,7 @@ array.forEach((el,i) => { console.log(el,)})
 
 
 
-const array2 = [ 1, true, 'string', NaN, {avto: 'bmw'}]
+// const array2 = [ 1, true, 'string', NaN, {avto: 'bmw'}]
 // for (let i = 0; i < array2.length; i++) {
 //   // console.log(typeof array2[i]);
 //   console.log(i);
@@ -89,28 +89,28 @@ const array2 = [ 1, true, 'string', NaN, {avto: 'bmw'}]
   
 // }
 
-const newArray = array2.filter((element,i) => {
-  return typeof element !== 'object'
+// const newArray = array2.filter((element,i) => {
+//   return typeof element !== 'object'
 
-})
-console.log(newArray);
-
-
-const sum = (a,b) => {
-const result = a + b
-return result
-}
-const res = sum(50,40) 
-
-console.log(res);
+// })
+// console.log(newArray);
 
 
+// const sum = (a,b) => {
+// const result = a + b
+// return result
+// }
+// const res = sum(50,40) 
+
+// console.log(res);
 
 
 
-const print = (name, age) => {
-  console.log(`My name is ${name}, I am ${age}`)
-}
+
+
+// const print = (name, age) => {
+//   console.log(`My name is ${name}, I am ${age}`)
+// }
 
 
 
