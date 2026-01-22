@@ -26,11 +26,13 @@ const buttonPrev = document.getElementById("prev-button")
 const buttonNext = document.getElementById("next-button")
 
 let i = 0 
+const lengthImg = WEB_TECH_IMAGES.length-1
+
 
 buttonPrev.addEventListener('click',()=>{
   i = i - 1 
   if(i<0){
-    i = 2
+    i = lengthImg
   }
   img.src = WEB_TECH_IMAGES[i]
   
@@ -38,7 +40,7 @@ buttonPrev.addEventListener('click',()=>{
 
 buttonNext.addEventListener('click',()=>{
   i = i + 1   
-  if(i > 2){
+  if(i > lengthImg){
     i = 0;
   }
 img.src = WEB_TECH_IMAGES[i]
