@@ -5,13 +5,16 @@
   Ваша задача написать обработчик события, который будет добавлять питомцев в корзину.
 
   1. При клике на кнопку с питомцем, id питомца должен добавляться в массив cart.
-  2. После добавления питомца в корзину, необходимо вызвать функцию updateCartDisplay (она обновит отображение корзины).
-  3. В корзину можно добавить не более 3 питомцев. Если пользователь пытается добавить больше, то в messageBox должен появится текст: 'Вы не можете добавить более 3 питомцев'
+  2. После добавления питомца в корзину, необходимо вызвать функцию updateCartDisplay 
+  (она обновит отображение корзины).
+  3. В корзину можно добавить не более 3 питомцев. Если пользователь пытается добавить больше,
+  то в messageBox должен появится текст: 'Вы не можете добавить более 3 питомцев'
 
   ❕❕❕ Представленный в задании код не следует изменять. Требуется только дописать обработчик события.
 
   🧙 Подсказка: используй делегирование - будет достаточно одного обработчика событий на контейнере
-  🧙 Подсказка: если пользователь кликнет по кнопке с питомцев, id питомца можно будет получить из объекта события (event.target.id)
+  🧙 Подсказка: если пользователь кликнет по кнопке с питомцев, id питомца можно будет получить из объекта события 
+  (event.target.id)
 */
 
 const PETS = [
@@ -30,6 +33,7 @@ const PETS = [
 ]
 
 const cart = []
+console.log(cart);
 
 const petShop = document.querySelector('.pet-shop')
 const cartList = document.getElementById('cart-list')
@@ -40,11 +44,11 @@ const clearCartButton = document.getElementById('clear-cart-button')
 for (let i = 0; i < PETS.length; i++) {
   const pet = PETS[i]
 
-  const petButtonElement = document.createElement('button')
-  petButtonElement.classList.add('pet')
-  petButtonElement.id = pet.id
-  petButtonElement.textContent = pet.title
-
+  const petButtonElement = document.createElement('button')// создан <button></button> 
+  petButtonElement.classList.add('pet') // <button class='pet'></button>
+  petButtonElement.id = pet.id // <button class='pet' id='cat'></button>
+  petButtonElement.textContent = pet.title // <button class='pet' id='cat'> 🐱</button> 
+  
   petShop.append(petButtonElement)
 }
 
@@ -54,7 +58,7 @@ function updateCartDisplay() {
 
   for (let i = 0; i < cart.length; i++) {
     const petId = cart[i]
-    const pet = PETS.find((item) => item.id === petId)
+    const pet = PETS.find((item) => item.id === petId)// может вернуть  { id: 'cat', title: '🐱' }, если не найдет undefined
     const petSpanElement = document.createElement('li')
     petSpanElement.classList.add('pet')
     petSpanElement.textContent = pet.title
@@ -68,3 +72,20 @@ clearCartButton.addEventListener('click', function () {
 })
 
 // Твой код:
+
+
+petShop.addEventListener('click',(event)=>{
+  cart.push(event.target.id)
+  updateCartDisplay()
+  if(cart.length >= 3){
+    messageBox.textContent = 'Вы не можете добавить более 3 питомцев'
+  }
+})
+
+
+// })
+//1.При клике на кнопку с питомцем, id питомца должен добавляться в массив cart.
+//2.После добавления питомца в корзину, необходимо вызвать функцию updateCartDisplay
+//  (она обновит отображение корзины).
+//3. В корзину можно добавить не более 3 питомцев. Если пользователь пытается добавить больше, 
+// то в messageBox должен появится текст: 'Вы не можете добавить более 3 питомцев'
